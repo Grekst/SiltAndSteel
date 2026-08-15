@@ -1,5 +1,6 @@
 package com.grekst.siltandsteel;
 
+import com.grekst.siltandsteel.block.ModBlocks;
 import com.grekst.siltandsteel.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -53,6 +54,7 @@ public class SiltAndSteel {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -70,8 +72,11 @@ public class SiltAndSteel {
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.PEATCLUMP);
-            event.accept(ModItems.PEAT);
+            event.accept(ModItems.PEAT_CLUMP);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.PEAT);
         }
     }
 

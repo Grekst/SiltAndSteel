@@ -9,10 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SiltAndSteel.MODID);
 
-    public static final DeferredItem<Item> PEATCLUMP = ITEMS.register("peat_clump",
-            () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> PEAT = ITEMS.register("peat",
+    public static final DeferredItem<Item> PEAT_CLUMP = ITEMS.register("peat_clump",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){

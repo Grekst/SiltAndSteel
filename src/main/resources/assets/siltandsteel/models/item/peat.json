@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "siltandsteel:item/peat"
-  }
+  "parent": "siltandsteel:block/peat"
 }
