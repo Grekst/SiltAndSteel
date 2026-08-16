@@ -1,10 +1,15 @@
 {
     "item.siltandsteel.peat_clump": "Peat Clump",
-    "item.siltandsteel.dried_peat_clump": "Dried Peat Clump",
+    "item.siltandsteel.dried_peat_cube": "Dried Peat Cube",
+    "item.siltandsteel.bog_iron": "Bog Iron",
     "item.siltandsteel.copper_chisel": "Copper Chisel",
 
 
     "block.siltandsteel.peat": "Peat",
+    "block.siltandsteel.silt": "Silt",
+    "block.siltandsteel.silt_iron_ore": "Silt Iron Ore",
+
+    "tooltip.siltandsteel.peat_clump.tooltip": "Can be dried on a campfire",
 
     "creativetab.siltandsteel.nature": "Silt & Steel: Nature",
     "creativetab.siltandsteel.progress": "Silt & Steel: Progress"

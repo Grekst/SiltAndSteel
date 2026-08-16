@@ -21,6 +21,20 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> PEAT = registerBlock("peat",
             () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.7f)
+                    .speedFactor(0.6f)
+                    .sound(SoundType.GRAVEL)
+            ));
+
+    public static final DeferredBlock<Block> SILT = registerBlock("silt",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.8f)
+                    .speedFactor(0.6f)
+                    .sound(SoundType.GRAVEL)
+            ));
+
+    public static final DeferredBlock<Block> SILT_IRON_ORE = registerBlock("silt_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.8f)
                     .speedFactor(0.6f)
                     .sound(SoundType.GRAVEL)

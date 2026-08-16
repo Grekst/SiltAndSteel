@@ -23,9 +23,12 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.siltandsteel.nature"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.PEAT_CLUMP);
-                        output.accept(ModItems.DRIED_PEAT_CLUMP);
+                        output.accept(ModItems.DRIED_PEAT_CUBE);
 
                         output.accept(ModBlocks.PEAT);
+                        output.accept(ModBlocks.SILT);
+                        output.accept(ModBlocks.SILT_IRON_ORE);
+                        output.accept(ModItems.BOG_IRON);
 
                     }).build());
 

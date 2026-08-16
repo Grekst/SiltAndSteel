@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "siltandsteel:peat"
+    "siltandsteel:peat",
+    "siltandsteel:silt",
+    "siltandsteel:silt_iron_ore"
   ]
 }
