@@ -1,7 +1,5 @@
 {
   "variants": {
-    "":{
-      "model": "siltandsteel:block/peat"
-    }
+    "": { "model": "siltandsteel:block/peat" }
   }
 }

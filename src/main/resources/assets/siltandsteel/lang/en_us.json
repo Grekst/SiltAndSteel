@@ -1,4 +1,11 @@
 {
     "item.siltandsteel.peat_clump": "Peat Clump",
-    "item.siltandsteel.peat": "Peat"
+    "item.siltandsteel.dried_peat_clump": "Dried Peat Clump",
+    "item.siltandsteel.copper_chisel": "Copper Chisel",
+
+
+    "block.siltandsteel.peat": "Peat",
+
+    "creativetab.siltandsteel.nature": "Silt & Steel: Nature",
+    "creativetab.siltandsteel.progress": "Silt & Steel: Progress"
 }

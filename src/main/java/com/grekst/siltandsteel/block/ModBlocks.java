@@ -2,9 +2,11 @@ package com.grekst.siltandsteel.block;
 
 import com.grekst.siltandsteel.SiltAndSteel;
 import com.grekst.siltandsteel.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -19,23 +21,22 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> PEAT = registerBlock("peat",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.9f)
+                    .strength(0.8f)
                     .speedFactor(0.6f)
                     .sound(SoundType.GRAVEL)
-                    .ignitedByLava()
             ));
 
-    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
+    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
 
-    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block){
+    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
-    public static void register(IEventBus eventBus){
+    public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
 }
