@@ -20,7 +20,7 @@ public class MortarAndPestleItem extends Item {
         int newDamage = copy.getDamageValue() + 1;
 
         if (newDamage >= copy.getMaxDamage()) {
-            return ItemStack.EMPTY; // Item breaks
+            return ItemStack.EMPTY;
         }
 
         copy.setDamageValue(newDamage);

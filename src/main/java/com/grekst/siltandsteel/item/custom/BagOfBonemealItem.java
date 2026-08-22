@@ -40,9 +40,9 @@ public class BagOfBonemealItem extends Item {
                 ServerPlayer serverPlayer = player instanceof ServerPlayer sp ? sp : null;
 
                 stack.hurtAndBreak(1, serverLevel, serverPlayer,
-                        item -> stack.setCount(0)); // item breaks at 0 durability
+                        item -> stack.setCount(0));
 
-                level.levelEvent(1505, pos, 0); // same particle/sound event vanilla bonemeal uses
+                level.levelEvent(1505, pos, 0);
             }
 
             return InteractionResult.SUCCESS;
