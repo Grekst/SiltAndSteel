@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "siltandsteel:mortar_and_pestle"
+    }
+  ],
+  "result": {
+    "id": "siltandsteel:carbon_powder",
+    "count": 1
+  }
+}

@@ -2,14 +2,20 @@
     "item.siltandsteel.peat_clump": "Peat Clump",
     "item.siltandsteel.dried_peat_cube": "Dried Peat Cube",
     "item.siltandsteel.bog_iron": "Bog Iron",
+    "item.siltandsteel.carbon_powder": "Carbon Powder",
+    "item.siltandsteel.sulfur": "Sulfur",
+
     "item.siltandsteel.copper_chisel": "Copper Chisel",
+    "item.siltandsteel.mortar_and_pestle": "Mortar and Pestle",
+    "item.siltandsteel.copper_shears": "Copper Shears",
+    "item.siltandsteel.bag_of_fertilizer": "Bag of Fertilizer",
+    "item.siltandsteel.large_bag_of_fertilizer": "Large Bag of Fertilizer",
+    "item.siltandsteel.saltpeter_powder": "Saltpeter Powder",
 
-
+    "block.siltandsteel.nether_sulfur_ore": "Nether Sulfur Ore",
     "block.siltandsteel.peat": "Peat",
     "block.siltandsteel.silt": "Silt",
     "block.siltandsteel.silt_iron_ore": "Silt Iron Ore",
-
-    "tooltip.siltandsteel.peat_clump.tooltip": "Can be dried on a campfire",
 
     "creativetab.siltandsteel.nature": "Silt & Steel: Nature",
     "creativetab.siltandsteel.progress": "Silt & Steel: Progress"

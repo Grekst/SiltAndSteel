@@ -29,6 +29,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SILT);
                         output.accept(ModBlocks.SILT_IRON_ORE);
                         output.accept(ModItems.BOG_IRON);
+                        output.accept(ModItems.CARBON_POWDER);
+                        output.accept(ModItems.SALTPETER_POWDER);
+                        output.accept(ModItems.SULFUR);
+                        output.accept(ModBlocks.NETHER_SULFUR_ORE);
 
                     }).build());
 
@@ -38,6 +42,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.siltandsteel.progress"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.COPPER_CHISEL);
+                        output.accept(ModItems.COPPER_SHEARS);
+                        output.accept(ModItems.MORTAR_AND_PESTLE);
+                        output.accept(ModItems.BAG_OF_FERTILIZER);
+                        output.accept(ModItems.LARGE_BAG_OF_FERTILIZER);
 
                     }).build());
 

@@ -2,11 +2,9 @@ package com.grekst.siltandsteel.block;
 
 import com.grekst.siltandsteel.SiltAndSteel;
 import com.grekst.siltandsteel.item.ModItems;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -38,6 +36,13 @@ public class ModBlocks {
                     .strength(0.8f)
                     .speedFactor(0.6f)
                     .sound(SoundType.GRAVEL)
+            ));
+
+    public static final DeferredBlock<Block> NETHER_SULFUR_ORE = registerBlock("nether_sulfur_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.8f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERRACK)
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

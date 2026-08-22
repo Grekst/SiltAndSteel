@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "siltandsteel:item/large_bag_of_fertilizer"
+  }
+}
